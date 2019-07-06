@@ -20,8 +20,6 @@ app.get('/form_traveler_get', (req, res) => {
 })
 
 
-
-
 app.get('/traveler', (req, res) => {
     let db = new sqlite3.Database('Data', (err) => {
         if (err){
