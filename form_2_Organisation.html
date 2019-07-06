@@ -1,0 +1,96 @@
+ <!DOCTYPE html>
+<html>
+<head>
+  <title>Organisation</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="form_2_style_Organisation.css">
+<link rel="icon" type="image/jpg" href="https://comps.canstockphoto.com/letter-t-sign-design-template-element-eps-vectors_csp48692731.jpg">
+
+
+
+</head>
+<body>
+
+<h1>New Organisation Form</h1>
+
+<div class="container">
+<div class="border">
+  <form action="/form_organsation_post" method="post">
+    <div class="profile">
+  <img class="imagechange" id="blah" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5hF42fAnC3wn20nr0diGWfe6vg-JVsPkH59ogPFq0cscn15ls">
+  <script>
+     function readURL(input) {
+    if (input.files && input.files[0]) {
+      var reader = new FileReader();
+      reader.onload = function (e) {
+        $('#blah')
+          .attr('src', e.target.result)
+      };
+      reader.readAsDataURL(input.files[0]);
+    }
+  }
+
+  </script>
+</div>
+<input onchange="readURL(this)" id="form" type="file" name="img" value="choose Image">
+      
+    <div class="sedein">
+    <label for="fname">Organisation Name</label>
+    <input type="text" id="fname" name="organisation" placeholder="Your name..">
+
+    <label for="lname">Website Link</label>
+    <input type="text" id="lname" name="website" placeholder="Your last name..">
+    </div>
+    </div>
+
+    <label for="email">Email address</label>
+    <input type="text" id="email" name="email" placeholder="Your Email..">
+
+    <label for=number>Phone number</label>
+    <input type="text" name="number" placeholder="Your Number..">
+
+    <label for=text>Address</label>
+    <input type="text" name="address" placeholder="Your Address..">
+
+    <label for="country">Special Categary work</label>
+    <select id="country" name="works">
+      <option value="Select">Select</option>
+      <option value="Education">Education</option>
+      <option value="Recycling">Recycling</option>
+      <option value="Tech-Education">Tech-Education</option>
+      <option value="Gender Equality">Gender Equality</option>
+      <option value="Social activity">Social activity</option>
+      <option value="Elementary Education">Elementary Education</option>
+      <option value="Woman work">Woman work</option>
+      <option value="Social Awarness">Social Awarness</option>
+    </select>
+
+    <label for="Language">Language</label>
+    <select id="country" name="language">
+      <option value="australia">Select</option>
+      <option value="English">English</option>
+      <option value="Hindi">Hindi</option>
+      <option value="Italian">Italian</option>
+      <option value="Telugu">Telugu</option>
+      <option value="Japanese">Japanese</option>
+      <option value="Tamil">Tamil</option>
+      <option value="Bengali">Bengali</option>
+      <option value="Spanish">Spanish</option>
+      <option value="French">French</option>
+      <option value="Russian">Russian</option>
+      <option value="Indonesian">Indonesian</option>
+    </select>
+
+    <label for="subject">Description</label>
+    <textarea id="subject" name="description" placeholder="Write something.." style="height:200px"></textarea>
+
+    <label >Needs</label>
+    <textarea id="skills" name="needs" placeholder="What are the organsation needs....." style="height:200px"></textarea>
+    <input type="submit" value="Submit">
+  </form>
+  </div>
+</div>
+
+</body>
+</html>
