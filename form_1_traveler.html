@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="form_1_traveler_style.css">
+<link rel="icon" type="image/jpg" href="https://comps.canstockphoto.com/letter-t-sign-design-template-element-eps-vectors_csp48692731.jpg">
+
+</head>
+<body>
+
+<h1>Contact Form</h1>
+
+<div class="container">
+<div class="border">
+  <form action="/form_traveler_post" method="post">
+    <div class="profile">
+    <img src="https://cdn.glitch.com/766c7b00-b383-4bfe-8fc0-b0b627b94106%2Fprofile.png?v=1559907342032">
+    <script>
+     function readURL(input) {
+    if (input.files && input.files[0]) {
+      var reader = new FileReader();
+      reader.onload = function (e) {
+        $('#blah')
+          .attr('src', e.target.result)
+      };
+      reader.readAsDataURL(input.files[0]);
+    }
+  }
+
+  </script>
+
+    <div>
+      <!-- <input onchange="readURL(this)" id="form" type="file" name="img" value="choose Image"> -->
+
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    </div>
+    </div>
+
+    
+
+
+    <label for="age">Age</label>
+    <input type="number" id="age" name="age" placeholder="Your age.."><br><br>
+
+
+    <label for="email">EMAIL ADDRESS</label>
+    <input type="text" id="email" name="email" placeholder="Your Email.."><br><br>
+
+    <label for=number>PHONE NUMBER</label>
+    <input type="text" placeholder="Your Number.." name="phone">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+
+    <label for="subject">Description</label>
+    <textarea id="subject" name="description" placeholder="Write something.." style="height:200px"></textarea>
+
+    <label >SKILLS</label>
+    <textarea id="skills" name="skills" placeholder="What are the skills you have....." style="height:200px"></textarea>
+    <input type="submit" value="Submit">
+  </form>
+  </div>
+</div>
+
+</body>
+</html>
